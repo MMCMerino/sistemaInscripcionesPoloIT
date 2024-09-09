@@ -2,23 +2,27 @@ package logica;
 
 import java.util.Date;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 //Persona es una herencia pero no quiero que persista
 //para guardar en la base de datos 
 @Entity
 @Inheritance (strategy=InheritanceType.TABLE_PER_CLASS)
 public class Persona {
     @Id
-    @GenerationValue(strategy= GenerationType IDENTITY)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
     private String nombre;
     private String apellido;
     private String dni;
     private String correo;    
     private String telefono;
+    @Temporal(TemporalType.DATE)
     private Date fecha_nac;
 
     public Persona() {
