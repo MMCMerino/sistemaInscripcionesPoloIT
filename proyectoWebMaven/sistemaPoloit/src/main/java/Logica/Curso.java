@@ -38,6 +38,11 @@ public class Curso {
         this.listaAlumnos = listaAlumnos;
     }
 
+    public int getId_curso() {
+        return id_curso;
+    }
+
+    
     public int getCantAlumnos() {
         return cantAlumnos;
     }

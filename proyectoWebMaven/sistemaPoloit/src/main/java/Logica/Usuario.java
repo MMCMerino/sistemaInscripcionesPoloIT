@@ -22,14 +22,28 @@ public class Usuario {
     
     public Usuario(){}
 
-    public Usuario( String nombreUsuario, String contrasenia) {
-        
+    public Usuario(String nombreUsuario, String contrasenia, String rol) {
         this.nombreUsuario = nombreUsuario;
         this.contrasenia = contrasenia;
+        this.rol = rol;
     }
 
    
 
+    public int getId_usuario() {
+        return id_usuario;
+    }
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+
+   
+    
     public String getNombreUsuario() {
         return nombreUsuario;
     }
