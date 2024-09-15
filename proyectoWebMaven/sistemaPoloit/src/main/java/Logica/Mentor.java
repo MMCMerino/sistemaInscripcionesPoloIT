@@ -1,6 +1,7 @@
 package logica;
 
 import java.util.Date;
+import java.util.List;
 
 
 public class Mentor extends Persona {
@@ -9,19 +10,25 @@ public class Mentor extends Persona {
     private String especializacion;
     private Curso unCurso;
     private Usuario unUsuario;
+    //MM
+    private Administrador unAdministrador;
+    private List<Egresado> listaAlumnos;
+    //
     
     public Mentor() {
     }
 
-    public Mentor( String empresa, String especializacion, Curso unCurso, Usuario unUsuario, String nombre, String apellido, String correo, String telefono, Date fecha_nac) {
+    public Mentor(String empresa, String especializacion, Curso unCurso, Usuario unUsuario, Administrador unAdministrador, List<Egresado> listaAlumnos, String nombre, String apellido, String correo, String telefono, Date fecha_nac) {
         super(nombre, apellido, correo, telefono, fecha_nac);
-        
         this.empresa = empresa;
         this.especializacion = especializacion;
         this.unCurso = unCurso;
         this.unUsuario = unUsuario;
+        this.unAdministrador = unAdministrador;
+        this.listaAlumnos = listaAlumnos;
     }
 
+   
     
 
     public String getEmpresa() {
@@ -54,6 +61,22 @@ public class Mentor extends Persona {
 
     public void setUnUsuario(Usuario unUsuario) {
         this.unUsuario = unUsuario;
+    }
+
+    public Administrador getUnAdministrador() {
+        return unAdministrador;
+    }
+
+    public void setUnAdministrador(Administrador unAdministrador) {
+        this.unAdministrador = unAdministrador;
+    }
+
+    public List<Egresado> getListaAlumnos() {
+        return listaAlumnos;
+    }
+
+    public void setListaAlumnos(List<Egresado> listaAlumnos) {
+        this.listaAlumnos = listaAlumnos;
     }
     
     
