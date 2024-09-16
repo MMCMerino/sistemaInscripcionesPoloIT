@@ -12,7 +12,7 @@ import javax.persistence.TemporalType;
 //Persona es una herencia pero no quiero que persista
 //para guardar en la base de datos 
 @Entity
-@Inheritance (strategy=InheritanceType.TABLE_PER_CLASS)
+@Inheritance (strategy=InheritanceType.TABLE_PER_CLASS)//Crea una tabla por cada clase hija, por lo tanto id tiene que estar en la clase padre
 public class Persona {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -39,6 +39,10 @@ public class Persona {
     }
 
 
+      public int getId() {
+        return id;
+    }
+      
     public String getNombre() {
         return nombre;
     }

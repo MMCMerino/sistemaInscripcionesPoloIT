@@ -3,15 +3,25 @@ package logica;
 
 import java.util.Date;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 @Entity
 
 public class Egresado extends Persona{
     
     
     private int comision;
+    
+    @ManyToOne
+    @JoinColumn(name="curso_id")
     private Curso unCurso;
-    //MM
+    
+    @ManyToOne
+    @JoinColumn(name="mentor_id")
     private Mentor mentorAsignado;
+    
+    @ManyToOne
+    @JoinColumn(name="admin_id")
     private Administrador adminAsignado;
     //
     public Egresado() {

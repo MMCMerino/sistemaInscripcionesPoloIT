@@ -1,7 +1,9 @@
 package logica;
 
 import java.util.Date;
+import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -9,19 +11,29 @@ public class Administrador extends Persona{
     
     private String especializacion;
     private String cargo;
+   
     @OneToOne
     private Usuario unUsuario;
+    
+    
+    @OneToMany(mappedBy="unAdministrador")
+    private List<Mentor> listaMentores;
+    
+    @OneToMany(mappedBy="adminAsignado")
+    private List<Egresado> listaAlumnosDeAdmin;
+    
+    @OneToMany(mappedBy="adminAsigndoCurso")
+    private List<Curso> listaCursos;
+    
+    
+    
+    
     
     public Administrador() {
     }
 
-    public Administrador( String especializacion, String cargo, Usuario unUsuario, String nombre, String apellido, String correo, String telefono, Date fecha_nac) {
-        super(nombre, apellido, correo, telefono, fecha_nac);
-        
-        this.especializacion = especializacion;
-        this.cargo = cargo;
-        this.unUsuario = unUsuario;
-    }
+    
+    
     
     public Usuario getUnUsuario() {
         return unUsuario;
@@ -47,6 +59,8 @@ public class Administrador extends Persona{
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
+
+    
     
     
 }

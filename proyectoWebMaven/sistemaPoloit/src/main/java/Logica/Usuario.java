@@ -20,6 +20,8 @@ public class Usuario {
     //MM
     private String rol;
     
+    
+    
     public Usuario(){}
 
     public Usuario(String nombreUsuario, String contrasenia, String rol) {

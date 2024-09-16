@@ -2,16 +2,33 @@ package logica;
 
 import java.util.Date;
 import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 
+@Entity
 public class Mentor extends Persona {
     
     private String empresa;
     private String especializacion;
+    
+    
+    @OneToOne
     private Curso unCurso;
+    
+    
+    @OneToOne
     private Usuario unUsuario;
+    
     //MM
+    @ManyToOne
+    @JoinColumn(name="adminMentor_id")
     private Administrador unAdministrador;
+    
+    @OneToMany(mappedBy="mentorAsignado")
     private List<Egresado> listaAlumnos;
     //
     
