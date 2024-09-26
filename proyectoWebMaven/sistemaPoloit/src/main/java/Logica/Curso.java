@@ -2,6 +2,7 @@
 
 package logica;
 
+import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,7 +21,7 @@ import javax.persistence.OneToOne;
 
 @Entity
 
-public class Curso {
+public class Curso implements Serializable {
     //MM ver bien 
     
     @Id

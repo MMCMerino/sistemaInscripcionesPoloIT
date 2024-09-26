@@ -1,5 +1,6 @@
 package logica;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.Entity;
@@ -10,7 +11,7 @@ import javax.persistence.OneToOne;
 
 
 @Entity
-public class Mentor extends Persona {
+public class Mentor extends Persona implements Serializable {
     
     private String empresa;
     private String especializacion;

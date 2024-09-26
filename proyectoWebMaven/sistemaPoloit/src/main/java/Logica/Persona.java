@@ -1,5 +1,6 @@
 package logica;
 
+import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +14,7 @@ import javax.persistence.TemporalType;
 //para guardar en la base de datos 
 @Entity
 @Inheritance (strategy=InheritanceType.TABLE_PER_CLASS)//Crea una tabla por cada clase hija, por lo tanto id tiene que estar en la clase padre
-public class Persona {
+public class Persona implements Serializable {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
