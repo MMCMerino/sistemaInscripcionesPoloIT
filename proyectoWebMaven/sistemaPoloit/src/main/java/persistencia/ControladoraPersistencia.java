@@ -4,6 +4,8 @@
  */
 package persistencia;
 
+import logica.Usuario;
+
 /**
  *
  * @author Maria
@@ -15,5 +17,9 @@ public class ControladoraPersistencia {
     MentorJpaController mentorJPA = new MentorJpaController();
     PersonaJpaController personaJPA = new PersonaJpaController();
     UsuarioJpaController usuarioJPA = new UsuarioJpaController();
+ 
+    public void crearUsuario(Usuario usu){
     
+    usuarioJPA.create(usu);
+    }
 }
