@@ -23,7 +23,7 @@ public class Administrador extends Persona implements Serializable{
     @OneToMany(mappedBy="adminAsignado")
     private List<Egresado> listaAlumnosDeAdmin;
     
-    @OneToMany(mappedBy="adminAsigndoCurso")
+    @OneToMany(mappedBy="adminAsignadoCurso")
     private List<Curso> listaCursos;
     
     
