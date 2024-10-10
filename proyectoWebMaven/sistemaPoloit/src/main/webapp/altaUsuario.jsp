@@ -16,25 +16,26 @@
                                 <h1 class="h4 text-gray-900 mb-4">Cree su cuenta!</h1>
                             </div>
                             <form class="user" action="SvUsuarios" method="POST">
-                                <div class="form-group row">
-                                    <!--<<div class="col-sm-6 mb-3 mb-sm-0">
+                               <!-- <div class="form-group row">
+                                    <<div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="text" class="form-control form-control-user" id="nombre"
                                             placeholder="Nombre">
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="text" class="form-control form-control-user" id="apellido"
                                             placeholder="Apellido">
-                                    </div> -->
-                                </div>
+                                    </div> 
+                                </div>-->
+                                <div class="mx-auto" style="width: 40vw;">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user" id="nombreUsu" name="nombreUsu"
                                         placeholder="Elija su nombre de usuario">
                                 </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                <div class="form-group">
+                                    
                                         <input type="password" class="form-control form-control-user"
                                             id="contrasenia" name="contrasenia" placeholder="Contraseña">
-                                    </div>
+                                   
                                   <!--  <div class="col-sm-6">
                                         <input type="password" class="form-control form-control-user"
                                             id="repetirContrasenia" placeholder="Repetir contraseña">
@@ -50,7 +51,7 @@
                                     Crear Usuario
                                 </button>
                                 <hr>
-                                
+                                </div>
                             </form>
                             
                            

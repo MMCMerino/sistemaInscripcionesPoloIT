@@ -89,7 +89,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Inscripcion a Pasantias</h6>
-                        <a class="collapse-item" href="index.jsp">DiseÃ±adores UI/UX</a>
+                        <a class="collapse-item" href="index.jsp">Diseñadores UI/UX</a>
                         <a class="collapse-item" href="index.jsp">Desarrolladores</a>
                         <a class="collapse-item" href="index.jsp">QA</a>
                         <a class="collapse-item" href="index.jsp">Otros Roles</a>
@@ -153,9 +153,9 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="verUsuariosRegistrados.jsp">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tablas de alumnos</span></a>
+                    <span>Tabla de usuarios</span></a>
             </li>
 
             <!-- Divider -->

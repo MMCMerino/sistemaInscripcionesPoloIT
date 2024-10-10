@@ -4,6 +4,8 @@
  */
 package persistencia;
 
+import java.util.ArrayList;
+import java.util.List;
 import logica.Usuario;
 
 /**
@@ -18,16 +20,16 @@ public class ControladoraPersistencia {
     PersonaJpaController personaJPA = new PersonaJpaController();
     UsuarioJpaController usuarioJPA = new UsuarioJpaController();
 
-   
-
-    
-    
-    
     
     
     
     public void crearUsuario(Usuario usu){
     
     usuarioJPA.create(usu);
+    }
+
+    public List<Usuario> getUsuarios() {
+    return usuarioJPA.findUsuarioEntities();
+        
     }
 }
