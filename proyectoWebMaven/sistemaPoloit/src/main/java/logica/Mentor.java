@@ -36,8 +36,12 @@ public class Mentor extends Persona implements Serializable {
     public Mentor() {
     }
 
-    public Mentor(String empresa, String especializacion, Curso unCurso, Usuario unUsuario, Administrador unAdministrador, List<Egresado> listaAlumnos, String nombre, String apellido, String correo, String telefono, Date fecha_nac) {
-        super(nombre, apellido, correo, telefono, fecha_nac);
+    public Mentor(String nombre, String apellido, String dni, String correo, String telefono, Date fecha_nac) {
+        super(nombre, apellido, dni, correo, telefono, fecha_nac);
+    }
+
+    public Mentor(String empresa, String especializacion, Curso unCurso, Usuario unUsuario, Administrador unAdministrador, List<Egresado> listaAlumnos, String nombre, String apellido, String dni, String correo, String telefono, Date fecha_nac) {
+        super(nombre, apellido, dni, correo, telefono, fecha_nac);
         this.empresa = empresa;
         this.especializacion = especializacion;
         this.unCurso = unCurso;
@@ -45,6 +49,8 @@ public class Mentor extends Persona implements Serializable {
         this.unAdministrador = unAdministrador;
         this.listaAlumnos = listaAlumnos;
     }
+
+   
 
    
     

@@ -67,10 +67,10 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Inscripcion a Pasantias</h6>
-                        <a class="collapse-item" href="index.jsp">Diseñadores UI/UX</a>
-                        <a class="collapse-item" href="index.jsp">Desarrolladores</a>
-                        <a class="collapse-item" href="index.jsp">QA</a>
-                        <a class="collapse-item" href="index.jsp">Otros Roles</a>
+                        <a class="collapse-item" href="inscripcionEgresados.jsp">Diseñadores UI/UX</a>
+                        <a class="collapse-item" href="inscripcionEgresados.jsp">Desarrolladores</a>
+                        <a class="collapse-item" href="inscripcionEgresados.jsp">QA</a>
+                        <a class="collapse-item" href="inscripcionEgresados.jsp">Otros Roles</a>
                     </div>
                 </div>
             </li>

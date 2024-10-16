@@ -33,8 +33,8 @@ public class Administrador extends Persona implements Serializable{
     public Administrador() {
     }
 
-    public Administrador(String especializacion, String cargo, Usuario unUsuario, List<Mentor> listaMentores, List<Egresado> listaAlumnosDeAdmin, List<Curso> listaCursos, String nombre, String apellido, String correo, String telefono, Date fecha_nac) {
-        super(nombre, apellido, correo, telefono, fecha_nac);
+    public Administrador(String especializacion, String cargo, Usuario unUsuario, List<Mentor> listaMentores, List<Egresado> listaAlumnosDeAdmin, List<Curso> listaCursos, String nombre, String apellido, String dni, String correo, String telefono, Date fecha_nac) {
+        super(nombre, apellido, dni, correo, telefono, fecha_nac);
         this.especializacion = especializacion;
         this.cargo = cargo;
         this.unUsuario = unUsuario;
@@ -42,6 +42,12 @@ public class Administrador extends Persona implements Serializable{
         this.listaAlumnosDeAdmin = listaAlumnosDeAdmin;
         this.listaCursos = listaCursos;
     }
+
+    
+    
+    
+
+  
     
     
 

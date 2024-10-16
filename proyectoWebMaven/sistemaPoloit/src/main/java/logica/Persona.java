@@ -29,15 +29,16 @@ public class Persona implements Serializable {
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String correo, String telefono, Date fecha_nac) {
-        
+    public Persona(String nombre, String apellido, String dni, String correo, String telefono, Date fecha_nac) {
         this.nombre = nombre;
         this.apellido = apellido;
+        this.dni = dni;
         this.correo = correo;
         this.telefono = telefono;
         this.fecha_nac = fecha_nac;
-        
     }
+
+   
 
 
       public int getId() {

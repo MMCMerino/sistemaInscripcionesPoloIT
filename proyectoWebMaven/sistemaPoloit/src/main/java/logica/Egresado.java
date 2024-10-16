@@ -28,13 +28,24 @@ public class Egresado extends Persona implements Serializable{
     public Egresado() {
     }
 
-    public Egresado(int comision, Curso unCurso, Mentor mentorAsignado, Administrador adminAsignado, String nombre, String apellido, String correo, String telefono, Date fecha_nac) {
-        super(nombre, apellido, correo, telefono, fecha_nac);
+    public Egresado(String nombre, String apellido, String dni, String correo, String telefono, Date fecha_nac) {
+        super(nombre, apellido, dni, correo, telefono, fecha_nac);
+    }
+    
+    
+
+    public Egresado(int comision, Curso unCurso, Mentor mentorAsignado, Administrador adminAsignado, String nombre, String apellido, String dni, String correo, String telefono, Date fecha_nac) {
+        super(nombre, apellido, dni, correo, telefono, fecha_nac);
         this.comision = comision;
         this.unCurso = unCurso;
         this.mentorAsignado = mentorAsignado;
         this.adminAsignado = adminAsignado;
     }
+
+   
+
+   
+    
     
     
 

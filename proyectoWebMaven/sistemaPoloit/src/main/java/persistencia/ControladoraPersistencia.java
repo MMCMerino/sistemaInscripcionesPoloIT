@@ -4,8 +4,8 @@
  */
 package persistencia;
 
-import java.util.ArrayList;
 import java.util.List;
+import logica.Egresado;
 import logica.Usuario;
 
 /**
@@ -26,6 +26,11 @@ public class ControladoraPersistencia {
     public void crearUsuario(Usuario usu){
     
     usuarioJPA.create(usu);
+    }
+    
+    public void crearInscripcionEgresado(Egresado inscripcion_egre){
+    
+    egresadoJPA.create(inscripcion_egre);
     }
 
     public List<Usuario> getUsuarios() {
