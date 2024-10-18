@@ -6,6 +6,7 @@ package persistencia;
 
 import java.util.List;
 import logica.Egresado;
+import logica.Mentor;
 import logica.Usuario;
 
 /**
@@ -33,6 +34,14 @@ public class ControladoraPersistencia {
     egresadoJPA.create(inscripcion_egre);
     }
 
+    public void crearInscripcionMentor(Mentor inscripcion_mentor){
+    
+    
+    mentorJPA.create(inscripcion_mentor);
+    }
+            
+            
+            
     public List<Usuario> getUsuarios() {
     return usuarioJPA.findUsuarioEntities();
         

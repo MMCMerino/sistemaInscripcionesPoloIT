@@ -49,8 +49,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">MENTORIAS</h6>
-                        <a class="collapse-item" href="#">Inscripcion Mentores</a>
-                        <a class="collapse-item" href="formuMent.html">EMPRESAS</a>
+                        <a class="collapse-item" href="inscripcionMentores.jsp">Inscripcion Mentores</a>
+                        <a class="collapse-item" href="inscripcionMentores.jsp">EMPRESAS</a>
                     </div>
                 </div>
             </li>
@@ -87,7 +87,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">USUARIOS</h6>
                         <a class="collapse-item" href="altaUsuario.jsp">Crear Usuario</a>
-                        <a class="collapse-item" href="formuMent.html">Ingresar</a>
+                        <a class="collapse-item" href="login.jsp">Ingresar</a>
                     </div>
                 </div>
             </li>
@@ -173,7 +173,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">LOGIN</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Login</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -183,7 +183,7 @@
                                 
                                    <!-- redirige a logeo -->
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="login.jsp" >
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Inicio de sesion
                                 </a>
